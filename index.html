@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container-main">
+            <figure class="figure">
+                <img src="/assets//images//1.png" alt="Logo">
+                <h1 class="title">Gestão Fácil</h1>
+            </figure>
+            <form action="/relatorio.html" class="form">
+                <div class="inputWithIcon">
+                    <input type="text" placeholder="Grupo">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <div class="inputWithIcon">
+                    <input type="text" placeholder="Login">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="inputWithIcon inputWithIconTwo">
+                    <i class="bi bi-lock-fill"></i>
+                    <input type="password" placeholder="Senha" name="password" id="myPassword">
+                    <i class="bi bi-eye-slash-fill icon-passoword" aria-hidden="true" onclick="mouseoverPass();" onmouseout="mouseoutPass();"  id="olho" class="olho"></i>
+                </div>
+                <div class="container-button">
+                    <button class="form-button">Entrar</button>
+                </div>
+            </form>
+            <p class="text-copyright">Desenvolvido por: Paula Beatriz Santos Oliveira </p>
+        </div>
+    </main>
+
+    <script>
+        function mouseoverPass(obj) {
+            var obj = document.getElementById('myPassword');
+            obj.type = "text";
+        }
+        function mouseoutPass(obj) {
+            var obj = document.getElementById('myPassword');
+            obj.type = "password";
+        }
+
+    </script>
+</body>
+</html>
